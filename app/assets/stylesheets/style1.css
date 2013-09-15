@@ -1,0 +1,113 @@
+/* CSS for colinmleung.com */
+
+header, nav, section, article, aside, footer {
+   display:block;
+}
+
+nav {
+font-family: 'Josefin Slab', serif;
+}
+
+header {
+font-family: 'Open Sans', sans-serif;
+padding: 0;
+margin: 0;
+position: absolute;
+font-size: 2em;
+top: 250px;
+left: 150px;
+}
+
+#firstName, #middleName, #lastName {
+position: relative;
+}
+
+#firstNameRest, #lastNameRest {
+position: absolute;
+}
+
+#firstName {
+top: 0px;
+left: 40px;
+}
+
+#middleName {
+top: -75px;
+left: 2px;
+}
+
+#lastName {
+top: -130px;
+left: 80px;
+}
+
+#firstNameInitial {
+}
+
+#firstNameRest {
+top: -42px;
+left: 33px;
+font-size: 2em;
+}
+
+#middleNameInitial {
+}
+
+#lastNameInitial {
+}
+
+#lastNameRest {
+top: -42px;
+left: 20px;
+}
+
+#firstNameRest, #lastNameRest {
+color: #d0d0d0;
+}
+
+ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+text-align: right;
+float: left;
+position: absolute;
+top: 100px;
+left: 85px;
+}
+
+a {
+text-decoration: none;
+}
+
+a:link, a:visited {
+color: #b0b0b0;
+}
+
+a:hover, a:active, a.current {
+color: #000000;
+}
+
+#logo {
+position: absolute;
+top: -225px;
+left: -63px;
+}
+
+#logotype {
+position: absolute;
+font-size: 0.5em;
+top: -232px;
+left: -125px;
+}
+
+#bodycontent {
+font-family: 'Open Sans', sans-serif;
+font-weight: 300;
+font-size: 15px;
+position: absolute;
+top: 85px;
+    *top: 100px;
+left: 170px;
+max-width: 600px;
+}
