@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:100|Open+Sans:700,300' rel='stylesheet' type='text/css'>
+    <title>colin m leung</title>
+    <meta charset="utf-8"/>
+    <meta name="robots" content="index, follow, noarchive"/>
+    <meta name="googlebot" content="noarchive"/>
+    <link href="style1.css" rel="stylesheet" type="text/css"/>
+    <!--[if lt IE 9]>
+      <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <div id="logotype">
+        <h1>cml</h1>
+      </div>
+      <img id="logo" src="drawing.png" height="50" width="55"/>
+    </header>
+    <%= render 'navigation' %>
+    <div id="bodycontent">
+      <div id="projects">
+        <div id="reddit-sentiment-analysis">
+          <h2>Reddit Sentiment Analysis Application</h2>
+          <p>A web application that allows users to enter a search term and analyze the first nine
+                        reddit post results for their sentiment polarity</p>
+          <figure>
+            <img src="rsa_pic_processed.png" alt="Reddit Sentiment Analysis Application Screenshot" width="800" height="500"/>
+          </figure>
+          <a href="http://www.colinmleung.com/rsa/index.php" target="_blank">Link to application</a><br>
+          <p>Note: sentiment analyzing API is unstable</p>
+          <a href="https://github.com/colinmleung/reddit-sentiment-analysis" target="_blank">Link to code</a>
+        </div>
+        <div id="text-adventure">
+          <h2>Text Adventure Game</h2>
+          <p>A console text adventure game</p>
+          <figure>
+            <img src="dungeon_crawler.png" alt="Text Adventure Game Screenshot" width="750" height="300"/>
+          </figure>
+          <a href="https://github.com/colinmleung/dungeon-crawler" target="_blank">Link to code</a>
+        </div>
+        <div id="work-journal">
+          <h2>Work Journal Web Application</h2>
+          <p>A CRUD web application that allows users to create templates of journal prompts and
+                        use them to write journal entries</p>
+          <figure>
+            <img src="workjournal.png" alt="Screenshot of the Templates page of the application." width="425" height="350"/>
+            <figcaption></figcaption>
+          </figure>
+          <a href="http://www.colinmleung.com/workjournal/ajax/application/signin.php" target="_blank">Link to application</a><br>
+          <a href="https://github.com/colinmleung/work-journal" target="_blank">Link to code</a>
+        </div>
+        <div id="localization">
+          <h2>Localization System for Telehealth Applications</h2>
+          <p>A local positioning system which uses a combination of ultrasound and radio frequency waves to accurately locate moving objects</p>
+          <figure>
+            <img src="localization.png" alt="System overview of the localization device." width="440" height="325"/>
+            <!--<figcaption>Interactions within our localization system to locate moving objects.</figcaption>-->
+          </figure>
+          <a href="https://docs.google.com/document/d/1RKTXfA3HNPnZP0qF2K-x9H2uwWuRlz_UBX85jUnbOVM/edit" target="_blank">Link to draft of final report</a><br>
+        </div>
+        <div id="robot">
+          <h2>Autonomous Racing Robot</h2>
+          <p>A tape-following robot with control algorithms based on a primitive finite
+                        state machine</p>
+          <figure>
+            <img src="robot.jpg" alt="The Party Van is ON FIRE!" width="304" height="228"/>
+            <!--<figcaption>Profile view of our winning robot, The Party Van.</figcaption>-->
+          </figure>
+          <a href="http://www.youtube.com/watch?v=ouQ41usUmjI" target="_blank">Link to video of the final race</a><br>
+          <a href="http://phys253-partyvan-2010.net84.net/" target="_blank">Link to robot's website</a><br>
+        </div>
+      </div>
+    </div>
+    <footer>
+    </footer>
+    <script type="text/javascript" src="jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="common.js"></script>
+  </body>
+</html>
