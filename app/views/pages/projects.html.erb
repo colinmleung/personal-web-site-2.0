@@ -12,12 +12,7 @@
     <![endif]-->
   </head>
   <body>
-    <header>
-      <div id="logotype">
-        <h1>cml</h1>
-      </div>
-      <img id="logo" src="drawing.png" height="50" width="55"/>
-    </header>
+    <%= render 'header' %>
     <%= render 'navigation' %>
     <div id="bodycontent">
       <div id="projects">
@@ -26,7 +21,7 @@
           <p>A web application that allows users to enter a search term and analyze the first nine
                         reddit post results for their sentiment polarity</p>
           <figure>
-            <img src="rsa_pic_processed.png" alt="Reddit Sentiment Analysis Application Screenshot" width="800" height="500"/>
+            <%= image_tag("rsa_pic_processed.png", size: "800x500", alt: "Reddit Sentiment Analysis Application Screenshot") %>
           </figure>
           <a href="http://www.colinmleung.com/rsa/index.php" target="_blank">Link to application</a><br>
           <p>Note: sentiment analyzing API is unstable</p>
@@ -36,7 +31,7 @@
           <h2>Text Adventure Game</h2>
           <p>A console text adventure game</p>
           <figure>
-            <img src="dungeon_crawler.png" alt="Text Adventure Game Screenshot" width="750" height="300"/>
+            <%= image_tag("dungeon_crawler.png", size: "750x300", alt: "Text Adventure Game Screenshot") %>
           </figure>
           <a href="https://github.com/colinmleung/dungeon-crawler" target="_blank">Link to code</a>
         </div>
@@ -45,8 +40,7 @@
           <p>A CRUD web application that allows users to create templates of journal prompts and
                         use them to write journal entries</p>
           <figure>
-            <img src="workjournal.png" alt="Screenshot of the Templates page of the application." width="425" height="350"/>
-            <figcaption></figcaption>
+            <%= image_tag("workjournal.png", size: "425x350", alt: "Templates Page Screenshot") %>
           </figure>
           <a href="http://www.colinmleung.com/workjournal/ajax/application/signin.php" target="_blank">Link to application</a><br>
           <a href="https://github.com/colinmleung/work-journal" target="_blank">Link to code</a>
@@ -55,7 +49,7 @@
           <h2>Localization System for Telehealth Applications</h2>
           <p>A local positioning system which uses a combination of ultrasound and radio frequency waves to accurately locate moving objects</p>
           <figure>
-            <img src="localization.png" alt="System overview of the localization device." width="440" height="325"/>
+            <%= image_tag("localization.png", size: "440x325", alt: "System overview of the localization device") %>
             <!--<figcaption>Interactions within our localization system to locate moving objects.</figcaption>-->
           </figure>
           <a href="https://docs.google.com/document/d/1RKTXfA3HNPnZP0qF2K-x9H2uwWuRlz_UBX85jUnbOVM/edit" target="_blank">Link to draft of final report</a><br>
@@ -65,7 +59,7 @@
           <p>A tape-following robot with control algorithms based on a primitive finite
                         state machine</p>
           <figure>
-            <img src="robot.jpg" alt="The Party Van is ON FIRE!" width="304" height="228"/>
+            <%= image_tag("robot.jpg", size: "304x228", alt: "The Party Van is ON FIRE!") %>
             <!--<figcaption>Profile view of our winning robot, The Party Van.</figcaption>-->
           </figure>
           <a href="http://www.youtube.com/watch?v=ouQ41usUmjI" target="_blank">Link to video of the final race</a><br>
