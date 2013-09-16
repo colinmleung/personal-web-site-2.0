@@ -1,71 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:100|Open+Sans:700,300' rel='stylesheet' type='text/css'>
-    <title>colin m leung</title>
-    <meta charset="utf-8"/>
-    <meta name="robots" content="index, follow, noarchive"/>
-    <meta name="googlebot" content="noarchive"/>
-    <%= stylesheet_link_tag "style1" %>
-    <!--[if lt IE 9]>
-      <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <%= render 'header' %>
-    <%= render 'navigation' %>
-    <div id="bodycontent">
-      <div id="projects">
-        <div id="reddit-sentiment-analysis">
-          <h2>Reddit Sentiment Analysis Application</h2>
-          <p>A web application that allows users to enter a search term and analyze the first nine
-                        reddit post results for their sentiment polarity</p>
-          <figure>
-            <%= image_tag("rsa_pic_processed.png", size: "800x500", alt: "Reddit Sentiment Analysis Application Screenshot") %>
-          </figure>
-          <a href="http://www.colinmleung.com/rsa/index.php" target="_blank">Link to application</a><br>
-          <p>Note: sentiment analyzing API is unstable</p>
-          <a href="https://github.com/colinmleung/reddit-sentiment-analysis" target="_blank">Link to code</a>
-        </div>
-        <div id="text-adventure">
-          <h2>Text Adventure Game</h2>
-          <p>A console text adventure game</p>
-          <figure>
-            <%= image_tag("dungeon_crawler.png", size: "750x300", alt: "Text Adventure Game Screenshot") %>
-          </figure>
-          <a href="https://github.com/colinmleung/dungeon-crawler" target="_blank">Link to code</a>
-        </div>
-        <div id="work-journal">
-          <h2>Work Journal Web Application</h2>
-          <p>A CRUD web application that allows users to create templates of journal prompts and
-                        use them to write journal entries</p>
-          <figure>
-            <%= image_tag("workjournal.png", size: "425x350", alt: "Templates Page Screenshot") %>
-          </figure>
-          <a href="http://www.colinmleung.com/workjournal/ajax/application/signin.php" target="_blank">Link to application</a><br>
-          <a href="https://github.com/colinmleung/work-journal" target="_blank">Link to code</a>
-        </div>
-        <div id="localization">
-          <h2>Localization System for Telehealth Applications</h2>
-          <p>A local positioning system which uses a combination of ultrasound and radio frequency waves to accurately locate moving objects</p>
-          <figure>
-            <%= image_tag("localization.png", size: "440x325", alt: "System overview of the localization device") %>
-            <!--<figcaption>Interactions within our localization system to locate moving objects.</figcaption>-->
-          </figure>
-          <a href="https://docs.google.com/document/d/1RKTXfA3HNPnZP0qF2K-x9H2uwWuRlz_UBX85jUnbOVM/edit" target="_blank">Link to draft of final report</a><br>
-        </div>
-        <div id="robot">
-          <h2>Autonomous Racing Robot</h2>
-          <p>A tape-following robot with control algorithms based on a primitive finite
-                        state machine</p>
-          <figure>
-            <%= image_tag("robot.jpg", size: "304x228", alt: "The Party Van is ON FIRE!") %>
-            <!--<figcaption>Profile view of our winning robot, The Party Van.</figcaption>-->
-          </figure>
-          <a href="http://www.youtube.com/watch?v=ouQ41usUmjI" target="_blank">Link to video of the final race</a><br>
-          <a href="http://phys253-partyvan-2010.net84.net/" target="_blank">Link to robot's website</a><br>
-        </div>
-      </div>
+<% content_for :head do %>
+  <%=stylesheet_link_tag "style1" %>
+<% end %>
+
+<%= render 'header' %>
+<%= render 'navigation' %>
+<div id="bodycontent">
+  <div id="projects">
+    <div id="reddit-sentiment-analysis">
+      <h2>Reddit Sentiment Analysis Application</h2>
+      <p>A web application that allows users to enter a search term and analyze the first nine
+                    reddit post results for their sentiment polarity</p>
+      <figure>
+        <%= image_tag("rsa_pic_processed.png", size: "800x500", alt: "Reddit Sentiment Analysis Application Screenshot") %>
+      </figure>
+      <%= link_to("Code", "https://github.com/colinmleung/reddit-sentiment-analysis", target: "_blank") %>
     </div>
-  </body>
-</html>
+
+    <div id="text-adventure">
+      <h2>Text Adventure Game</h2>
+      <p>A console text adventure game</p>
+      <figure>
+        <%= image_tag("dungeon_crawler.png", size: "750x300", alt: "Text Adventure Game Screenshot") %>
+      </figure>
+      <%= link_to("Code", "https://github.com/colinmleung/dungeon-crawler", target: "_blank") %>
+    </div>
+
+    <div id="work-journal">
+      <h2>Work Journal Web Application</h2>
+      <p>A CRUD web application that allows users to create templates of journal prompts and
+                    use them to write journal entries</p>
+      <figure>
+        <%= image_tag("workjournal.png", size: "425x350", alt: "Templates Page Screenshot") %>
+      </figure>
+      <%= link_to("Code", "https://github.com/colinmleung/work-journal", target: "_blank") %>
+    </div>
+
+    <div id="localization">
+      <h2>Localization System for Telehealth Applications</h2>
+      <p>A local positioning system which uses a combination of ultrasound and radio frequency waves to accurately locate moving objects</p>
+      <figure>
+        <%= image_tag("localization.png", size: "440x325", alt: "System overview of the localization device") %>
+        <!--<figcaption>Interactions within our localization system to locate moving objects.</figcaption>-->
+      </figure>
+      <%= link_to("Draft of final report", "https://docs.google.com/document/d/1RKTXfA3HNPnZP0qF2K-x9H2uwWuRlz_UBX85jUnbOVM/edit", target: "_blank") %>
+    </div>
+
+    <div id="robot">
+      <h2>Autonomous Racing Robot</h2>
+      <p>A tape-following robot with control algorithms based on a primitive finite
+                    state machine</p>
+      <figure>
+        <%= image_tag("robot.jpg", size: "304x228", alt: "The Party Van is ON FIRE!") %>
+        <!--<figcaption>Profile view of our winning robot, The Party Van.</figcaption>-->
+      </figure>
+      <%= link_to("Video of the final race", "http://www.youtube.com/watch?v=ouQ41usUmjI", target: "_blank") %><br/>
+      <%= link_to("Robot's Website", "http://phys253-partyvan-2010.net84.net/", target: "_blank") %>
+    </div>
+  </div>
+</div>

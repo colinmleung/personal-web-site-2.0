@@ -1,31 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:100|Open+Sans:700,300' rel='stylesheet' type='text/css'>
-    <title>colin m leung</title>
-    <meta charset="utf-8"/>
-    <meta name="robots" content="index, follow, noarchive"/>
-    <meta name="googlebot" content="noarchive"/>
-    <%= stylesheet_link_tag "style1" %>
-    <!--[if lt IE 9]>
-      <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <header>
-      <div id="firstName">
-        <h1 id="firstNameInitial">c</h1>
-        <h1 id="firstNameRest">olin</h1>
-      </div>
-      <div id="middleName">
-        <h1 id="middleNameInitial">m</h1>
-      </div>
-      <div id="lastName">
-        <h1 id="lastNameInitial">l</h1>
-        <h1 id="lastNameRest">eung</h1>
-      </div>
-    </header>
-    <%= render 'navigation' %>
-    <%= image_tag("drawing.png", size: "55x50", alt: "logo") %>
-  </body>
-</html>
+<% content_for :head do %>
+  <%=stylesheet_link_tag "style1" %>
+<% end %>
+
+<header>
+  <div id="firstName">
+    <h1 id="firstNameInitial">c</h1>
+    <h1 id="firstNameRest">olin</h1>
+  </div>
+  <div id="middleName">
+    <h1 id="middleNameInitial">m</h1>
+  </div>
+  <div id="lastName">
+    <h1 id="lastNameInitial">l</h1>
+    <h1 id="lastNameRest">eung</h1>
+  </div>
+</header>
+<%= render 'navigation' %>
+<%= image_tag("drawing.png", size: "55x50", alt: "logo") %>

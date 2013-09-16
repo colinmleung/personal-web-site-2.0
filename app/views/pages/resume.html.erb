@@ -1,30 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:100|Open+Sans:700,300' rel='stylesheet' type='text/css'>
-    <title>colin m leung</title>
-    <meta charset="utf-8"/>
-    <meta name="robots" content="index, follow, noarchive"/>
-    <meta name="googlebot" content="noarchive"/>
-    <%= stylesheet_link_tag "styleresume" %>
-    <link href="styleresume.css" rel="stylesheet" type="text/css"/>
-    <!--[if lt IE 9]>
-      <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <%= render 'header' %>
-    <%= render 'navigation' %>
-    <div id="bodycontent">
-      <div id="resume">
-        <object data='resume.pdf#'
+<% content_for :head do %>
+  <%=stylesheet_link_tag "styleresume" %>
+<% end %>
+
+<%= render 'header' %>
+<%= render 'navigation' %>
+<div id="bodycontent">
+  <div id="resume">
+    <object data='resume.pdf#'
                 type='application/pdf'
                 width='750'
                 height='1035'>
-                <p>It appears your Web browser is not configured to display PDF files.
+      <p>It appears your Web browser is not configured to display PDF files.
                 No worries, just <a href='resume.pdf'>click here to download the PDF file.</a></p>
-        </object>
-      </div>
-    </div>
-  </body>
-</html>
+    </object>
+  </div>
+</div>
