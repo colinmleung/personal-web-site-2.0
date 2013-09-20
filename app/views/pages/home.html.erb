@@ -1,19 +1,17 @@
-<% content_for :head do %>
-  <%=stylesheet_link_tag "style1" %>
-<% end %>
+<div id="content" role="main" class="centered">
+  <div class="container">
+    <%= image_tag("rails.png", size: "150x100", alt: "logo", style: "float: left;") %>
+    <div class="offcenter">
+      <h1>Hello, my name is Colin. Welcome to my website. Lorem ipsum blah blah blah blah blah.</h1>
+      <br/>
+      <a class="btn btn-lg btn-primary" href="resume.pdf" target="_blank">View Resume</a>
+    </div>
+  </div>
+</div>
 
-<header>
-  <div id="firstName">
-    <h1 id="firstNameInitial">c</h1>
-    <h1 id="firstNameRest">olin</h1>
+<footer>
+  <div class="container">
+    <%= link_to image_tag("social-011_linkedin.png", alt: "logo", style: "float: left; padding-right: 25px; padding-top: 5px;"), "http://www.linkedin.com/pub/colin-leung/46/310/b83" %>
+    <%= link_to image_tag("Logos-Github-icon.png", alt: "logo", style: "float: left;"), "https://github.com/colinmleung" %>
   </div>
-  <div id="middleName">
-    <h1 id="middleNameInitial">m</h1>
-  </div>
-  <div id="lastName">
-    <h1 id="lastNameInitial">l</h1>
-    <h1 id="lastNameRest">eung</h1>
-  </div>
-</header>
-<%= render 'navigation' %>
-<%= image_tag("drawing.png", size: "55x50", alt: "logo") %>
+</footer>

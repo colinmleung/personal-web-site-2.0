@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>colin m leung</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
@@ -8,12 +8,25 @@
   <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:100|Open+Sans:700,300' rel='stylesheet' type='text/css'>
   <meta name="robots" content="index, follow, noarchive"/>
   <meta name="googlebot" content="noarchive"/>
-  <!--[if lt IE 9]>
-    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-  <![endif]-->
-  <%= yield :head %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
+  <header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+          <%= link_to 'cml', root_path, class: "navbar-brand" %>
+      </div>
+      <nav class="pull-right">
+        <ul class="nav navbar-nav">
+          <li><%= link_to 'About', about_path %></li>
+          <li><%= link_to 'Work', work_path %></li>
+          <li><%= link_to 'Projects', projects_path %></li>
+          <li><%= link_to 'Contact', contact_path %></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
   <%= yield %>
 </body>
 </html>

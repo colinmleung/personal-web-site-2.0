@@ -1,7 +1,7 @@
 PersonalWebsite::Application.routes.draw do
   root 'pages#home'
   match 'about',    to: 'pages#about',    via: 'get'
-  match 'resume',   to: 'pages#resume',   via: 'get'
+  match 'work',   to: 'pages#work',   via: 'get'
   match 'projects', to: 'pages#projects', via: 'get'
   match 'contact',  to: 'pages#contact',  via: 'get'
 
