@@ -3,7 +3,6 @@ PersonalWebsite::Application.routes.draw do
   match 'about',    to: 'pages#about',    via: 'get'
   match 'work',   to: 'pages#work',   via: 'get'
   match 'projects', to: 'pages#projects', via: 'get'
-  match 'contact',  to: 'pages#contact',  via: 'get'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
