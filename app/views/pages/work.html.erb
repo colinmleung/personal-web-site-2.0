@@ -2,62 +2,50 @@
   <div class="row">
     <div id="sidebarnav" style="width: 250px;" data-spy="affix">
       <ul id="local-nav-list" class="nav nav-pills nav-stacked nav-list">
-        <li><a href="#cloud">Full-Stack Web Developer</a></li>
-        <li><a href="#sentiment">Power Measurement Engineer</a></li>
-        <li><a href="#text">Image Analysis Algorithm Developer</a></li>
-        <li><a href="#work">Interface Developer</a></li>
+        <li><a href="#web">Full-Stack Web Developer</a></li>
+        <li><a href="#power">Power Measurement Engineer</a></li>
+        <li><a href="#image">Image Analysis Algorithm Developer</a></li>
+        <li><a href="#interface">Interface Developer</a></li>
       </ul>
     </div>
-    <div style="margin-left: 270px; margin-top: 45px;">
+    <div style="margin-left: 270px; margin-top: 45px; width: 50%;">
       <div>
-        <h2><span id="cloud"> &nbsp; </span>Real-Time Hashtag Word Cloud</h2>
+        <h2><span id="web"> &nbsp; </span>Full-Stack Web Developer</h2>
+          <p>I worked at Ingenium Technologies as a web developer from January to August 2013. I was responsible for developing new features for our construction lead management application. I programmed with HTML, CSS (LESS), and Javascript (jQuery) on the front-end, and developed the backend with C# using the ASP.NET MVC framework. I worked within a small development team that used Agile practices such as holding stand-up meetings and creating user stories.</p>
+
+          <p>Some tasks I took on include:</p>
+
+          <ul>
+            <li>building mobile-friendly views</li>
+            <li>adding Javascript widgets</li>
+            <li>building out an administration panel for customer support</li>
+            <li>refactoring the front-end to transform specialized code into a more componentized form</li>
+            <li>creating automated tests in Selenium</li>
+            <li>adding Google Analytics events to better understand application usage</li>
+          </ul>
       </div>
       <div>
-        <h2><span id="sentiment"> &nbsp; </span>Reddit Sentiment Analysis Application</h2>
-          <p>A web application that allows users to enter a search term and analyze the first nine
-                        reddit post results for their sentiment polarity</p>
-          <figure>
-            <%= image_tag("rsa_pic_processed.png", size: "800x500", alt: "Reddit Sentiment Analysis Application Screenshot") %>
-          </figure>
-          <%= link_to("Code", "https://github.com/colinmleung/reddit-sentiment-analysis", target: "_blank") %>
+        <h2><span id="power"> &nbsp; </span>Power Measurement Engineer</h2>
+          <p>At Broadcom, I worked as a developer supporting the Power Management Team for 8 months from May to December 2012. I was responsible for measuring the power consumption of system-on-chip devices as the firmware evolved, and as new chipsets came out.</p>
+
+          <p>In order to create reproducible results, I wrote low-level driver scripts to replicate user behaviour (such as playing Angry Birds). It was also necessary to create physical test harnesses to accurately measure power consumption during use-cases such as video recording.</p>
+
+          <p>Being the most familiar with the measurement setups, I debugged power regressions as new software came out. Debugging some of these issues would prove incredibly complex, requiring measurements taken in multiple hardware configurations to find the root cause of the issue. In situations like these, documentation on the wiki, on JIRA, and engineering logbooks proved vital to solving issues.</p>
       </div>
       <div>
-        <h2><span id="text"> &nbsp; </span>Text Adventure Game</h2>
-          <p>A console text adventure game</p>
-          <figure>
-            <%= image_tag("dungeon_crawler.png", size: "750x300", alt: "Text Adventure Game Screenshot") %>
-          </figure>
-          <%= link_to("Code", "https:/
-          /github.com/colinmleung/dungeon-crawler", target: "_blank") %>
+        <h2><span id="image"> &nbsp; </span>Image Analysis Algorithm Developer</h2>
+          <p>In 2011, I worked as a software developer at Taiheiyo Cement from May to December as part of the Canada Japan Co-op Program. My role was to provide programming expertise for the Cement Chemistry team, helping them to quantify their cement samples using image analysis algorithms.<p>
+
+          <p>In the first few months, I assessed my coworkers needs, and built prototype scripts in Scilab. The team decided they would like to examine multiple types of cement in various ways, and I decided that building an image analysis toolkit would be best. I then architected an application using Windows Presentation Foundation for the interface, and OpenCV as the processing backend.</p>
+
+          <p>After reading cement analysis research papers, it became obvious I would have to invent the analysis algorithms myself. At that point, programming the entire analysis framework myself would take too long, and I decided that coming up with algorithms using off-the-shelf analysis solutions would deliver the best results for the team.</p>
+
+          <p>After more research, which included preparing my own cement samples and taking pictures with electron microscopes, I was able to use a sequence of ImageJ operations to come up with two successful algorithms.</p>
       </div>
       <div>
-        <h2><span id="work"> &nbsp; </span>Work Journal Web Application</h2>
-          <p>A CRUD web application that allows users to create templates of journal prompts and
-                        use them to write journal entries</p>
-          <figure>
-            <%= image_tag("workjournal.png", size: "425x350", alt: "Templates Page Screenshot") %>
-          </figure>
-          <%= link_to("Code", "https://github.com/colinmleung/work-journal", target: "_blank") %>
-      </div>
-      <div>
-        <h2><span id="localization"> &nbsp; </span>Localization System for Telehealth Applications</h2>
-          <p>A local positioning system which uses a combination of ultrasound and radio frequency waves to accurately locate moving objects</p>
-          <figure>
-            <%= image_tag("localization.png", size: "440x325", alt: "System overview of the localization device") %>
-            <!--<figcaption>Interactions within our localization system to locate moving objects.</figcaption>-->
-          </figure>
-          <%= link_to("Draft of final report", "https://docs.google.com/document/d/1RKTXfA3HNPnZP0qF2K-x9H2uwWuRlz_UBX85jUnbOVM/edit", target: "_blank") %>
-      </div>
-      <div>
-        <h2><span id="racing"> &nbsp; </span>Autonomous Racing Robot</h2>
-          <p>A tape-following robot with control algorithms based on a primitive finite
-                        state machine</p>
-          <figure>
-            <%= image_tag("robot.jpg", size: "304x228", alt: "The Party Van is ON FIRE!") %>
-            <!--<figcaption>Profile view of our winning robot, The Party Van.</figcaption>-->
-          </figure>
-          <%= link_to("Video of the final race", "http://www.youtube.com/watch?v=ouQ41usUmjI", target: "_blank") %><br/>
-          <%= link_to("Robot's Website", "http://phys253-partyvan-2010.net84.net/", target: "_blank") %>
+        <h2><span id="interface"> &nbsp; </span>Interface Developer</h2>
+          <p>I worked my first co-op job at <%= link_to "A.U.G. Signals", "http://www.augsignals.com" %> from January to April 2010. My role was to work closely with image analysis researchers and create interfaces to expose the power of their algorithms to clients. These interfaces would be completed on a per-project basis, using whatever technology suited the project at hand. I created interfaces in MATLAB and C using the MFC framework. In addition to this role, I wrote bash scripts and  set up development environments and libraries such as <%= link_to "Gazebo", "http://gazebosim.org" %>.</p>
+          <p>I investigated how to improve interfaces using techniques such as implementing loading bars and changing the interface size to accomodate different file type resolutions. Due to the large number of client change requests and rapid algorithmic development, I also learnt about the importance of refactoring applications to be maintainable.</p>
       </div>
     </div>
   </div>
