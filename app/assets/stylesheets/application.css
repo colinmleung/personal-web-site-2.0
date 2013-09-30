@@ -14,18 +14,16 @@
  */
 
  .centered {
-  padding-top: 210px;
-  padding-bottom: 130px;
+  padding-top: 200px;
   padding-left: 150px;
  }
 
  .offcenter {
-  position: relative;
   padding-left: 250px;
  }
 
  h2 span {
-  margin-top: -45px;
+  padding-top: -45px;
   padding-bottom: 45px;
   display: block;
  }
@@ -34,7 +32,19 @@
   top: 75px;
  }
 
- footer {
-  right: 25px;
-  bottom: 25px;
- } 
+
+    * {
+    margin: 0;
+    }
+    html, body {
+    height: 100%;
+    }
+    .wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+    }
+    .footer, .push {
+    height: 4em;
+    }
