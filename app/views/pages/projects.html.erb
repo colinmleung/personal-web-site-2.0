@@ -2,7 +2,8 @@
   <div class="row">
     <div id="sidebarnav" style="width: 250px;" data-spy="affix">
       <ul id="local-nav-list" class="nav nav-pills nav-stacked nav-list">
-        <li><a href="#cloud">Real-time Hashtag Word Cloud</a></li>
+        <li><a href="#weather">Real-Time Tweet Sentiment Vs. Weather Application</a></li>
+        <li><a href="#cloud">Hashtag Word Cloud</a></li>
         <li><a href="#sentiment">Reddit Sentiment Analysis Application</a></li>
         <li><a href="#text">Text Adventure Game</a></li>
         <li><a href="#work">Work Journal Web Application</a></li>
@@ -12,7 +13,16 @@
     </div>
     <div style="margin-left: 270px; margin-top: -20px; width: 50%;">
       <div>
-        <h2><span id="cloud"> &nbsp; </span>Real-Time Hashtag Word Cloud</h2>
+        <h2><span id="weather"> &nbsp; </span>Real-Time Tweet Sentiment Vs. Weather Application</h2>
+        <%= image_tag("479 Proposal Architecture.png", size: "600x800", alt: "Sentiment Vs. Weather Architecture", style: "padding-left: 0px;") %>
+        <br/><br/>
+        <p>I built my capstone project in collaboration with two team members, <%= link_to("Chris", "http://www.chrisjyyoon.com", target: "_blank") %> and <%= link_to("Richard", "http://www.richardxlee.com", target: "_blank") %>, with the guidance of the UBC MAGIC Lab. The purpose of the project is to find and display interesting correlations in data using a web application, and engage the citizens of Vancouver. We chose to analyze how the weather affected Tweet sentiment. To accomplish this task, we used Java to perform data clustering, and Javascript to create visually engaging displays. My personal contribution was to build the dynamic Javascript front-end, incorporating Google Maps and graphs using the d3.js data visualization library. I also managed the data import process for the application.</p>
+        <br/>
+        <%= link_to("Code", "https://github.com/ubc-magic-students/enph479-2013", target: "_blank") %><br/>
+        <%= link_to("Final report", "http://docs.google.com/document/d/1aiWd8UfBQMTlDHTI4iOwzUg1m3aDJ7nWPc6TxvaylVQ/edit", target: "_blank") %>
+      </div>
+      <div>
+        <h2><span id="cloud"> &nbsp; </span>Hashtag Word Cloud</h2>
         <p>I built a visual web experiment during the summmer, after being inspired by <%= link_to("Twistori", "http://www.twistori.com", :target => "_blank")%>. I also used this project as an opportunity try out Node.js and MongoDB.</p>
         <%= image_tag("Tweet Word Cloud.png", size: "450x600", alt: "Hashtag Word Cloud", style: "padding-left: 100px;") %>
         <p>The web application itself is built using the Express framework, and it also runs a Twitter stream data importing/exporting process in parallel. Some technical issues I had to solve included:</p>
